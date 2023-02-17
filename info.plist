@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.liangshen.intellij-idea</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>4D8BB93B-9672-4ACF-BFFF-E32BD2A4DC53</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>911A34DF-D900-4137-8C95-17B6A6578688</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>911A34DF-D900-4137-8C95-17B6A6578688</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D14F0EAE-FF61-4513-A4F5-4DD32F1C9543</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>850D1497-EA52-4861-9D32-BEE8DA82E3E8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Wang Liang</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>IntelliJ Idea</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>D14F0EAE-FF61-4513-A4F5-4DD32F1C9543</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>34</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>I</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>4D8BB93B-9672-4ACF-BFFF-E32BD2A4DC53</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>idea</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node ./dist/index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>911A34DF-D900-4137-8C95-17B6A6578688</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>if [ -z "$@" ]
+then
+	open -na "IntelliJ IDEA.app"
+else
+	open -na "IntelliJ IDEA.app" --args "$@"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>850D1497-EA52-4861-9D32-BEE8DA82E3E8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># Alfred整合Jetbrains系列软件
+
+
+
+## 前言
+
+**Jetbrains系列的软件是我目前开发中最常用到的，比如：IDEA Webstorm Datagrip。这个工作流可以帮助快速检索查看和打开最近使用的项目 更重要的是只需要键盘就可以做到**
+
+
+
+#### 支持Jetbrains系列软件
+
+- @liangshen/alfred-intellij-idea: [npm地址](https://www.npmjs.com/package/@liangshen/alfred-intellij-idea) [github仓库地址](https://github.com/liangshen001/alfred-intellij-idea) (option + I)
+
+- @liangshen/alfred-webstorm: [npm地址](https://www.npmjs.com/package/@liangshen/alfred-webstorm) [github仓库地址 ](https://github.com/liangshen001/alfred-webstorm) (option + W)
+
+- @liangshen/alfred-datagrip: [npm地址](https://www.npmjs.com/package/@liangshen/alfred-datagrip) [github仓库地址 ](https://github.com/liangshen001/alfred-datagrip) (option + D)
+
+- @liangshen/alfred-pycharm: [npm地址](https://www.npmjs.com/package/@liangshen/alfred-pycharm) [github仓库地址 ](https://github.com/liangshen001/alfred-pycharm) (option + P)
+
+先解释下为什么jetbrains系列不同的软件需要不同的包，主要目的是为了按需引用，尽可能少的污染全局快捷键
+
+(option键在Mac上一般和control command键一起使用，很少会有软件使用option + 字母，所以一般使用option + 字母做为Alfred工作流的快捷键)
+
+
+
+
+
+#### 先看工作流的效果这里先以Idea为例
+
+使用 option + I 快捷键调出工作流 （或调出工作流然后中输入idea）可以列出最近使用Idea打开的文件
+
+![](https://cdn.jsdelivr.net/gh/liangshen001/PicGo@latest/2022/images/alfredidea.png)
+
+
+
+可以出入关键字进行搜索 同时也支持逻辑与(&amp;)和逻辑或(|)
+
+![](https://cdn.jsdelivr.net/gh/liangshen001/PicGo@latest/2022/images/alfredidea2.png)
+
+选中一个项目后
+
+- 直接回车会使用Idea打开此项目
+- 使用Command + 回车可使用Finder打开项目所在位置
+
+
+
+### 使用环境
+
+- Alfred 5 (Powerpack)
+
+- nodejs v6+(推荐使用最新稳定版本)
+- Jetbrains系列软件如(Idea webstorm datagrip pycharm)
+
+
+
+### 安装方法
+
+这里需要按需引入需要使用的工作流这里以Idea为例（如果安装了多个工作流安装的包大小共用部分是共享的不会占用储存空间）
+
+全局安装 @liangshen/alfred-intellij-idea
+
+```sh
+npm i @liangshen/alfred-intellij-idea -g
+#npm i @liangshen/alfred-webstorm -g
+#npm i @liangshen/alfred-datagrip -g
+#npm i @liangshen/alfred-pycharm -g
+```
+
+执行成功后工作流就已经安装完了，可以如效果图中正常使用了，Alfred会如下图多一个Workflows
+
+![](https://cdn.jsdelivr.net/gh/liangshen001/PicGo@latest/2022/images/alfredidea3.png)
+
+### 自定义配置
+
+可以打开Alfred Workflows 进行查看，可以自定义修改快捷键和关键词这里默认是 option + I / idea
+
+- 自定义快捷键 默认为option + I 可以点击Hotkey进行自定义配置
+
+- 自定义Alfred关键词 默认为idea 可以点击Script Filter进行自定义配置
+
+### 卸载
+
+此卸载会完全卸载工作流不会遗留任何文件
+
+```sh
+npm uninstall @liangshen/alfred-intellij-idea -g
+#npm uninstall @liangshen/alfred-webstorm -g
+#npm uninstall @liangshen/alfred-datagrip -g
+#npm uninstall @liangshen/alfred-pycharm -g
+```</string>
+	<key>uidata</key>
+	<dict>
+		<key>4D8BB93B-9672-4ACF-BFFF-E32BD2A4DC53</key>
+		<dict>
+			<key>xpos</key>
+			<real>125</real>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>850D1497-EA52-4861-9D32-BEE8DA82E3E8</key>
+		<dict>
+			<key>xpos</key>
+			<real>540</real>
+			<key>ypos</key>
+			<real>330</real>
+		</dict>
+		<key>911A34DF-D900-4137-8C95-17B6A6578688</key>
+		<dict>
+			<key>xpos</key>
+			<real>315</real>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>D14F0EAE-FF61-4513-A4F5-4DD32F1C9543</key>
+		<dict>
+			<key>xpos</key>
+			<real>540</real>
+			<key>ypos</key>
+			<real>145</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.2</string>
+	<key>webaddress</key>
+	<string>https://github.com/liangshen001/alfred-intellij-idea</string>
+</dict>
+</plist>
