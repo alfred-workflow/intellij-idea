@@ -10,20 +10,17 @@
 
 #### 支持Jetbrains系列软件
 
-- @liangshen/alfred-intellij-idea: [npm地址](https://www.npmjs.com/package/@liangshen/alfred-intellij-idea) [github仓库地址](https://github.com/liangshen001/alfred-intellij-idea) (option + I)
+- @alfred-workflows/intellij-idea: [npm地址](https://www.npmjs.com/package/alfred-workflows/intellij-idea) [github仓库地址](https://github.com/alfred-workflow/intellij-idea) (option + I)
 
-- @liangshen/alfred-webstorm: [npm地址](https://www.npmjs.com/package/@liangshen/alfred-webstorm) [github仓库地址 ](https://github.com/liangshen001/alfred-webstorm) (option + W)
+- @alfred-workflows/webstorm: [npm地址](https://www.npmjs.com/package/alfred-workflows/webstorm) [github仓库地址 ](https://github.com/alfred-workflow/webstorm) (option + W)
 
-- @liangshen/alfred-datagrip: [npm地址](https://www.npmjs.com/package/@liangshen/alfred-datagrip) [github仓库地址 ](https://github.com/liangshen001/alfred-datagrip) (option + D)
+- @alfred-workflows/datagrip: [npm地址](https://www.npmjs.com/package/alfred-workflows/datagrip) [github仓库地址 ](https://github.com/alfred-workflow/datagrip) (option + D)
 
-- @liangshen/alfred-pycharm: [npm地址](https://www.npmjs.com/package/@liangshen/alfred-pycharm) [github仓库地址 ](https://github.com/liangshen001/alfred-pycharm) (option + P)
+- @alfred-workflows/pycharm: [npm地址](https://www.npmjs.com/package/alfred-workflows/pycharm) [github仓库地址 ](https://github.com/alfred-workflow/ptcharm) (option + P)
 
 先解释下为什么jetbrains系列不同的软件需要不同的包，主要目的是为了按需引用，尽可能少的污染全局快捷键
 
 (option键在Mac上一般和control command键一起使用，很少会有软件使用option + 字母，所以一般使用option + 字母做为Alfred工作流的快捷键)
-
-
-
 
 
 #### 先看工作流的效果这里先以Idea为例
@@ -58,13 +55,13 @@
 
 这里需要按需引入需要使用的工作流这里以Idea为例（如果安装了多个工作流安装的包大小共用部分是共享的不会占用储存空间）
 
-全局安装 @liangshen/alfred-intellij-idea
+全局安装 @alfred-workflows/intellij-idea
 
 ```sh
-npm i @liangshen/alfred-intellij-idea -g
-#npm i @liangshen/alfred-webstorm -g
-#npm i @liangshen/alfred-datagrip -g
-#npm i @liangshen/alfred-pycharm -g
+npm i @alfred-workflows/intellij-idea -g
+#npm i @alfred-workflows/webstorm -g
+#npm i @alfred-workflows/datagrip -g
+#npm i @alfred-workflows/pycharm -g
 ```
 
 执行成功后工作流就已经安装完了，可以如效果图中正常使用了，Alfred会如下图多一个Workflows
@@ -84,10 +81,10 @@ npm i @liangshen/alfred-intellij-idea -g
 此卸载会完全卸载工作流不会遗留任何文件
 
 ```sh
-npm uninstall @liangshen/alfred-intellij-idea -g
-#npm uninstall @liangshen/alfred-webstorm -g
-#npm uninstall @liangshen/alfred-datagrip -g
-#npm uninstall @liangshen/alfred-pycharm -g
+npm uninstall @alfred-workflows/intellij-idea -g
+#npm uninstall @alfred-workflows/webstorm -g
+#npm uninstall @alfred-workflows/datagrip -g
+#npm uninstall @alfred-workflows/pycharm -g
 ```
 
 
